@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveWise AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MoveWise AI</h1>
+    <h3>AI Relocation Planner</h3>
+    <div class="information">
+      <form>
+        <div class="dropdown">
+        <select name="dropdown" class="country-select">
+          <option>India</option>
+          <option>United Kingdom</option>
+          <option>Australia</option>
+          <option>Usa</option>
+        </select>
+        <br>
+         <select name="dropdown" class="city-select">
+          <option>Delhi</option>
+          <option>London</option>
+          <option>Melbourne</option>
+          <option>Los Angeles</option>
+         </select>
+        <input type="text" class="budget-input">
+       <select name="dropdown" class="purpose">
+     <option>Student</option>
+     <option>Working Professional</option>
+     <option>Tourist</option>
+     <option>Family</option>
+       </select>
+        </div>
+        <button class="analyze-btn">Analyze with AI</button> 
+    </div>
+      </form>
+    <div class="result-card">
+            <h3>AI Recommendation</h3>
+            <p>Housing: ------</p>
+            <p>Transport: ------</p>
+            <p>Food: ------</p>
+            <p>Savings: ------</p>
+            <p>Advice: ------</p>
+            <p>Estimated Monthly Cost: ------</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
