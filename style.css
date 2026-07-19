@@ -9,6 +9,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.925), rgba(255, 0, 0, 0.744));
 }
+.main{
+    position: absolute;
+    left: 40%;
+}
+
 
 
