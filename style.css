@@ -5,13 +5,10 @@
 }
 
 body {
-  height: 0px;
-  width: 0px;
-}
-
-.main{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+
