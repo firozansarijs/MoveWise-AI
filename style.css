@@ -11,10 +11,20 @@ body {
     justify-content: center;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.925), rgba(255, 0, 0, 0.744));
 }
-.main{
+.information{
     position: absolute;
-    left: 40%;
+    right: 50%;
+    bottom: 30%;
+    border: 4px transparent black;
+    border-radius: 10px;
+    height: 400px;
+    width: 500px;
+    background-image: url(https://imgs.search.brave.com/b59Fl7YHWqBf7yNorc-q6HSQclbX4YkbLHDusqPrIuM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/NTAyLzEyMC9zbWFs/bC9kb3R0ZWQtYmx1/ZS13b3JsZC1tYXAt/aWxsdXN0cmF0aW9u/LWFnYWluc3QtYS1j/YXB0aXZhdGluZy1i/YWNrZ3JvdW5kLWFp/LWdlbmVyYXRlZC1w/aG90by5qcGc);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    padding: 20px;
+    color: darkgray;
 }
-
 
 
