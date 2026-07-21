@@ -30,7 +30,13 @@ fetch("https://countriesnow.space/api/v0.1/countries")
 
         for (let countrySelect of data.data) {
             if (country.value === countrySelect.country) {
-                console.log(countrySelect.cities);
+                city.innerHTML = "";
+        for (let cityName of countrySelect.cities) {
+       const option = document.createElement("option");
+       option.textContent = cityName;
+       option.value = cityName;
+       city.append(option);
+    }
             }
         }
     });
