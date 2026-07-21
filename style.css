@@ -9,10 +9,10 @@ body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.925), rgba(255, 0, 0, 0.744));
 }
 nav{
-    height: 45px;
-    padding-top: 8px;
+    height: 30px;
     font-family: fantasy;
-    font-size: xx-large;
+    font-size: x-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
     display: flex;
     justify-content: center;
     background-color: white;
@@ -37,6 +37,13 @@ nav{
     padding: 20px;
     color: darkgray;
 }
+.information,h3{
+    padding-bottom: 20px;
+    font-family: cursive;
+    font-size: larger;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
+}
+.country
 
 
 .result-card{
