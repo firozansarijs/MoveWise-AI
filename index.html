@@ -13,12 +13,9 @@
     <h3>AI Relocation Planner</h3>
       <form>
         <div class="dropdown">
-        <select name="dropdown" class="country-select">
-          <option>India</option>
-          <option>United Kingdom</option>
-          <option>Australia</option>
-          <option>Usa</option>
-        </select>
+        <select class="country-select">
+        <option>Select Country</option>
+      </select>
         <br>
          <select name="dropdown" class="city-select">
           <option>Delhi</option>
@@ -27,7 +24,7 @@
           <option>Los Angeles</option>
          </select>
          <br>
-        <input type="text" placeholder="Enter Your Monthly Budget" class="budget-input">
+        <input type="text" placeholder="Monthly Budget e.g. $1800" class="budget-input">
         <br>
        <select name="dropdown" class="purpose">
      <option>Student</option>
@@ -36,17 +33,19 @@
      <option>Family</option>
        </select>
         </div>
-        <button class="analyze-btn">Analyze with AI</button> 
+    <button type="button" class="analyze-btn">
+    ✨ Analyze with AI
+</button> 
     </div>
       </form>
     <div class="result-card">
             <h3>AI Recommendation</h3>
-            <p>Housing: ------</p>
-            <p>Transport: ------</p>
-            <p>Food: ------</p>
-            <p>Savings: ------</p>
-            <p>Advice: ------</p>
-            <p>Estimated Monthly Cost: ------</p>
+           <p>🏠 Housing:  <span class="housing">------</span></p>
+           <p>🚌 Transport:  <span class="transport">------</span></p>
+           <p>🍜 Food:  <span class="food">------</span></p>
+           <p>💰 Savings:  <span class="savings">------</span></p>
+           <p>💡 Advice:  <span class="advice">------</span></p>
+           <p>📊 Estimated Cost:  <span class="estimated-cost">------</span></p>
     </div>
     </div>
     <script src="app.js"></script>

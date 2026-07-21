@@ -7,7 +7,8 @@
 body {
     height: 100vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.925), rgba(255, 0, 0, 0.744));
-}
+    
+}   
 nav{
     height: 30px;
     font-family: fantasy;
@@ -83,16 +84,35 @@ input,::placeholder{
     padding-left: 2px;
 }
 .analyze-btn{
+    width: 90%;
+    height: 50px;
     margin-top: 20px;
-    font-size: medium;
-    height: 40px;
-    width: 400px;
-    border: 5px transparent black;
-    border-radius: 10px;
-    font-family: cursive;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
 }
 
+.analyze-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.45);
+    background: linear-gradient(135deg, #1d4ed8, #0891b2);
+}
+
+.analyze-btn:active{
+    transform: scale(0.98);
+}
+
+.analyze-btn:disabled{
+    background: #7c8797;
+    cursor: not-allowed;
+    box-shadow: none;
+}
 .result-card{
     padding: 30px;
     position: absolute;
@@ -105,7 +125,7 @@ input,::placeholder{
     background-image: url(https://i.pinimg.com/736x/88/8d/72/888d72a196f5fa236ff61866feda1037.jpg);
     background-position: center;
     background-size: cover;
-    color: #ff5959;
+    color: whitesmoke
 }
 .result-card,h3{
     padding-bottom: 20px;
