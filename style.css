@@ -43,8 +43,39 @@ nav{
     font-size: larger;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
 }
-.country
-
+.country-select{
+    height: 40px;
+    width: 200px;
+    border: 5px transparent black;
+    border-radius: 10px;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
+}
+.city-select{
+    height: 40px;
+    width: 200px;
+    border: 5px transparent black;
+    border-radius: 10px;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
+}
+.purpose{
+    height: 40px;
+    width: 200px;
+    border: 5px transparent black;
+    border-radius: 10px;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
+}
+input{
+    padding-bottom: 50px;
+    height: 40px;
+    width: 200px;
+    border: 5px transparent black;
+    border-radius: 10px;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.836);
+}
 
 .result-card{
     position: absolute;
