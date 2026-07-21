@@ -102,10 +102,10 @@ input,::placeholder{
     width: 400px;
     border: 4px transparent black;
     border-radius: 10px;
-    background-image: url(https://i.pinimg.com/736x/ca/00/72/ca0072d66152b5a7eae4ea1eb8ad0463.jpg);
+    background-image: url(https://i.pinimg.com/1200x/f0/54/db/f054dbcc27cac270ad1e31d879112ac4.jpg);
     background-position: center;
     background-size: cover;
-    color: #211103;
+    color: black;
 }
 .result-card,h3{
     padding-bottom: 20px;
