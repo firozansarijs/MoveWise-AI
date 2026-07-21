@@ -1,4 +1,16 @@
-
+const info = document.querySelector(".information");
+const country = document.querySelector(".country-select");
+const city = document.querySelector(".city-select");
+const cost = document.querySelector(".budget-input")
+const sector = document.querySelector(".purpose");
+const btn = document.querySelector(".analyze-btn");
+const result = document.querySelector(".result-card");
+const house = document.querySelector(".housing");
+const travel = document.querySelector(".transport");
+const eat = document.querySelector(".food");
+const save = document.querySelector(".savings");
+const suggestion = document.querySelector(".advice");
+const estimate = document.querySelector(".estimated-cost");
 
 fetch("https://countriesnow.space/api/v0.1/countries")
 .then((response) => {
