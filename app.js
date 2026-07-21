@@ -24,7 +24,9 @@ fetch("https://countriesnow.space/api/v0.1/countries")
         option.textContent = countrySelect.country;
         country.append(option);}
           country.addEventListener("change", () => {
-            console.log(country.value);;
+            if (country.value == countryData.country) {
+                console.log(countryData.cities);
+    }
         });
 })
 
