@@ -12,7 +12,6 @@ const save = document.querySelector(".savings");
 const suggestion = document.querySelector(".advice");
 const estimate = document.querySelector(".estimated-cost");
 
-
 fetch("https://countriesnow.space/api/v0.1/countries")
 .then((response) => {
     return response.json();
@@ -22,13 +21,20 @@ fetch("https://countriesnow.space/api/v0.1/countries")
     for (let countrySelect of data.data) {
         const option = document.createElement("option");
         option.textContent = countrySelect.country;
-        country.append(option);}
-          country.addEventListener("change", () => {
-            if (country.value == country.country) {
-                console.log(country.cities);
+        option.value = countrySelect.country;
+        country.append(option);
     }
-        });
-})
+
+    country.addEventListener("change", () => {
+        console.log(country.value);
+
+        for (let countrySelect of data.data) {
+            if (country.value === countrySelect.country) {
+                console.log(countrySelect.cities);
+            }
+        }
+    });
+});
 
 function generateHousing() {
 if (sector.value == "Student") {
