@@ -15,7 +15,7 @@ const estimate = document.querySelector(".estimated-cost");
 fetch("https://countriesnow.space/api/v0.1/countries")
 .then((response) => {
     response.json()
-});
+});1
 
 function generateHousing() {
 if (sector.value == "Student") {
