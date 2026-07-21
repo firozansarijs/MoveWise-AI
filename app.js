@@ -20,13 +20,13 @@ fetch("https://countriesnow.space/api/v0.1/countries")
 .then((data) => {
     console.log(data);
     for (let countrySelect of data.data) {
+         countrySelect.addEventListener("change", () => {
+            console.log("Country changed!");
+        });
         const option = document.createElement("option");
         option.textContent = countrySelect.country;
         country.append(option);}
 })
-countrySelect.addEventListener("change", () => {
-    console.log("Country changed!");
-});
 
 function generateHousing() {
 if (sector.value == "Student") {
