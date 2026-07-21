@@ -11,6 +11,9 @@ const eat = document.querySelector(".food");
 const save = document.querySelector(".savings");
 const suggestion = document.querySelector(".advice");
 const estimate = document.querySelector(".estimated-cost");
+const option = document.createElement("option");
+
+country.append(option);
 
 fetch("https://countriesnow.space/api/v0.1/countries")
 .then((response) => {
@@ -18,7 +21,11 @@ fetch("https://countriesnow.space/api/v0.1/countries")
 })
 .then((data) => {
     console.log(data);
+    for (let countrySelect  of data.data) {
+        option.textContent = country.countrySelect;
+    }
 })
+
 
 function generateHousing() {
 if (sector.value == "Student") {
