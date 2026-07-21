@@ -18,7 +18,7 @@ fetch("https://countriesnow.space/api/v0.1/countries")
 })
 .then((data) => {
     console.log(data);
-});
+})
 
 function generateHousing() {
 if (sector.value == "Student") {
