@@ -9,13 +9,17 @@ body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.925), rgba(255, 0, 0, 0.744));
 }
 nav{
-    height: 50px;
-    padding-top: 10px;
+    height: 45px;
+    padding-top: 8px;
     font-family: fantasy;
     font-size: xx-large;
     display: flex;
     justify-content: center;
-    background-color: darkblue;
+    background-color: white;
+    border: 5px transparent black;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    
 }
 .information{
     position: absolute;
@@ -30,10 +34,10 @@ nav{
     background-size: cover;
     background-repeat: no-repeat, repeat;
     font-weight: 300;
-    opacity: 60%;
     padding: 20px;
     color: darkgray;
 }
+
 
 .result-card{
     position: absolute;
