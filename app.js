@@ -77,7 +77,7 @@ if (sector.value == "Student") {
          
         }else if(cost.value <= 1000){
             save.textContent = "Very Limited Savings"; 
-        }else{
+        }else{1
             save.textContent = "Save 15% - 20%";  
         } 
     }
