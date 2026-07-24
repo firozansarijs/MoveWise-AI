@@ -54,28 +54,31 @@ if (sector.value == "Student") {
 }
 }
  function generateTransport() {
-    if(cost.value > 10000){
+    const budget = Number(cost.value);
+    if(budget > 10000){
         travel.textContent = "Own Car / Taxi";
-    }else if(cost.value <= 1000){
+    }else if(budget <= 1000){
         travel.textContent = "Public Bus";
     }else{
     travel.textContent = "Metro + Bus";
     }
  }
  function generateFood() {
-    if(cost.value > 10000){
+    const budget = Number(cost.value);
+    if(budget > 10000){
         eat.textContent = "Restaurant"; 
-    }else if(cost.value <= 1000){
+    }else if(budget <= 1000){
         eat.textContent = "Cook at Home";
     }else{
         eat.textContent = "Mix of Home & Restaurant";
     }
  }
  function generateSavings() {
-     if(cost.value > 10000){
+    const budget = Number(cost.value);
+     if(budget  > 10000){
          save.textContent = "Save 40% of your income";
          
-        }else if(cost.value <= 1000){
+        }else if(budget  <= 1000){
             save.textContent = "Very Limited Savings"; 
         }else{
             save.textContent = "Save 15% - 20%";  
@@ -94,9 +97,10 @@ if (sector.value == "Student") {
     }
     }
     function generateEstimate() {
-    if(cost.value > 10000){
+    const budget = Number(cost.value);
+    if(budget > 10000){
         estimate.textContent = "8,000 - 10,000/month";
-    }else if(cost.value <= 1000){
+    }else if(budget <= 1000){
         estimate.textContent = "Around 900/month";  
     }else{
         estimate.textContent = "2,000 - 5,000/month";
